@@ -1,2 +1,2 @@
 # frontend-study-
-rontend-study 
+frontend-study 
