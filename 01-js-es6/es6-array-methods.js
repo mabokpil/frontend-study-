@@ -51,7 +51,7 @@ const cart = [
   { item: '샌드위치', price: 5500, qty: 3 },
 ];
 
-const filtered = cart.map((e) => {
+const cartsResult = cart.map((e) => {
     const {item,price,qty} = e;
     const total = price * qty;
     return `${item}: ${total.toLocaleString()}원`
@@ -67,7 +67,7 @@ const orders = [
   { id: 4, product: '키보드', price: 80000, status: 'cancelled' },
 ];
 
-const filtered = orders.filter((order) => order.status === 'delivered').map((e)=>{
+const ordersResult = orders.filter((order) => order.status === 'delivered').map((e)=>{
     const {id,product,price} = e;
     return `주문 #${id} | ${product} | ${price.toLocaleString()}원`;
 })
